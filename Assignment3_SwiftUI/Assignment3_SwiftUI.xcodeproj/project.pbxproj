@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A57B8B4F2D9D86E000E7C44C /* YDS in Frameworks */ = {isa = PBXBuildFile; productRef = A57B8B4E2D9D86E000E7C44C /* YDS */; };
+		A57B8B512D9D86E000E7C44C /* YDS-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A57B8B502D9D86E000E7C44C /* YDS-SwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A5D625FE2D9D6E8200D9C5EB /* Assignment3_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57B8B4F2D9D86E000E7C44C /* YDS in Frameworks */,
+				A57B8B512D9D86E000E7C44C /* YDS-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = Assignment3_SwiftUI;
 			packageProductDependencies = (
+				A57B8B4E2D9D86E000E7C44C /* YDS */,
+				A57B8B502D9D86E000E7C44C /* YDS-SwiftUI */,
 			);
 			productName = Assignment3_SwiftUI;
 			productReference = A5D625FE2D9D6E8200D9C5EB /* Assignment3_SwiftUI.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = A5D625F52D9D6E8200D9C5EB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A57B8B4D2D9D86E000E7C44C /* XCRemoteSwiftPackageReference "YDS-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A5D625FF2D9D6E8200D9C5EB /* Products */;
 			projectDirPath = "";
@@ -322,6 +334,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A57B8B4D2D9D86E000E7C44C /* XCRemoteSwiftPackageReference "YDS-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yourssu/YDS-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A57B8B4E2D9D86E000E7C44C /* YDS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A57B8B4D2D9D86E000E7C44C /* XCRemoteSwiftPackageReference "YDS-iOS" */;
+			productName = YDS;
+		};
+		A57B8B502D9D86E000E7C44C /* YDS-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A57B8B4D2D9D86E000E7C44C /* XCRemoteSwiftPackageReference "YDS-iOS" */;
+			productName = "YDS-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5D625F62D9D6E8200D9C5EB /* Project object */;
 }
